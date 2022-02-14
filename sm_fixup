@@ -1,0 +1,12 @@
+#!/bin/zsh
+
+# TODO: parameter checking
+unzip $1
+
+# TODO: get the filename from dict.ini
+DICT=en_US.dic
+dos2unix ${DICT}
+
+TMP=${DICT}.tmp
+sed "s:/.*::g" ${DICT} | egrep -v "[0-9A-Z']" > ${TMP}
+mv ${TMP} sm_${DICT}t
