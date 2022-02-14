@@ -27,10 +27,17 @@ func ContainsWord(words []string, target string) bool {
 	return false
 }
 
-// LoadFile returns the contents of a file split on newlines, sorted, and uniqued
+// LoadFile returns the contents of a file split on newlines
 func LoadFile(file string) []string {
 	raw, _ := ioutil.ReadFile(file)
-	return strings.Split(string(raw), "\n")
+	words := strings.Split(string(raw), "\n")
+
+	// Strip trailing blank lines
+	for words[len(words)-1] == "" {
+		words = words[:len(words)-1]
+	}
+
+	return words
 }
 
 // FilterByLen returns all words of a given len from a given list of words
