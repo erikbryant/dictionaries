@@ -46,6 +46,28 @@ func equalInt2(a, b [][]int) bool {
 	return true
 }
 
+func TestContainsWord(t *testing.T) {
+	testCases := []struct {
+		words    []string
+		target   string
+		expected bool
+	}{
+		{[]string{"psh", "gg", "w"}, "psh", true},
+		{[]string{"psh", "gg", "w"}, "gg", true},
+		{[]string{"psh", "gg", "w"}, "w", true},
+		{[]string{"psh", "gg", "w"}, "s", false},
+		{[]string{"psh", "gg", ""}, "", true},
+		{[]string{"psh", "gg", "w"}, "", false},
+	}
+
+	for _, testCase := range testCases {
+		answer := ContainsWord(testCase.words, testCase.target)
+		if answer != testCase.expected {
+			t.Errorf("ERROR: For %v '%s' expected %t, got %t", testCase.words, testCase.target, testCase.expected, answer)
+		}
+	}
+}
+
 func TestFilterByLen(t *testing.T) {
 	testCases := []struct {
 		words    []string

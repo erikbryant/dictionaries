@@ -13,11 +13,6 @@ var ()
 
 // ContainsWord returns true if the word is in the slice
 func ContainsWord(words []string, target string) bool {
-	if target == "" {
-		// Nothing to search for
-		return true
-	}
-
 	for _, word := range words {
 		if word == target {
 			return true
