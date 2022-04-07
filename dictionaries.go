@@ -1,6 +1,6 @@
 package dictionaries
 
-// go fmt && golint && go test
+// go fmt ./... && go vet ./... && go test
 
 import (
 	"fmt"
