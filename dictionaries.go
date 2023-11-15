@@ -5,11 +5,34 @@ package dictionaries
 import (
 	"fmt"
 	"io/ioutil"
+	"log"
 	"sort"
 	"strings"
 )
 
 var ()
+
+// AllDicts returns a slice of filenames of all of the dictionaries.
+func AllDicts(path string) []string {
+	files, err := ioutil.ReadDir(path)
+	if err != nil {
+		log.Fatal(err)
+	}
+
+	dicts := []string{}
+
+	for _, file := range files {
+		if file.IsDir() {
+			continue
+		}
+		if !strings.HasSuffix(file.Name(), ".dict") {
+			continue
+		}
+		dicts = append(dicts, file.Name())
+	}
+
+	return dicts
+}
 
 // ContainsWord returns true if the word is in the slice
 func ContainsWord(words []string, target string) bool {
@@ -114,4 +137,36 @@ func PrettyPrintFreq(f []int) string {
 	}
 
 	return fmt.Sprintf("  %s\n", strings.Join(SortUnique(out), " "))
+}
+
+// Anagrams returns a map of anagram clusters and the count of words in the cluster.
+func Anagrams(words []string) map[string]int {
+	anagrams := map[string]int{}
+
+	for _, word := range words {
+		r := []rune(word)
+		sort.Slice(r, func(i, j int) bool {
+			return r[i] < r[j]
+		})
+		anagrams[string(r)]++
+	}
+
+	return anagrams
+}
+
+// WordLegths returns a sorted slice of all word lengths.
+func WordLengths(words []string) []int {
+	sizes := map[int]bool{}
+	for _, word := range words {
+		sizes[len(word)] = true
+	}
+
+	lengths := []int{}
+	for length, _ := range sizes {
+		lengths = append(lengths, length)
+	}
+
+	sort.Ints(lengths)
+
+	return lengths
 }
