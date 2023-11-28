@@ -4,8 +4,8 @@ package dictionaries
 
 import (
 	"fmt"
-	"io/ioutil"
 	"log"
+	"os"
 	"sort"
 	"strings"
 )
@@ -14,7 +14,7 @@ var ()
 
 // AllDicts returns a slice of filenames of all of the dictionaries.
 func AllDicts(path string) []string {
-	files, err := ioutil.ReadDir(path)
+	files, err := os.ReadDir(path)
 	if err != nil {
 		log.Fatal(err)
 	}
@@ -47,7 +47,7 @@ func ContainsWord(words []string, target string) bool {
 
 // LoadFile returns the contents of a file split on newlines
 func LoadFile(file string) []string {
-	raw, _ := ioutil.ReadFile(file)
+	raw, _ := os.ReadFile(file)
 	words := strings.Split(string(raw), "\n")
 
 	// Strip trailing blank lines
@@ -162,7 +162,7 @@ func WordLengths(words []string) []int {
 	}
 
 	lengths := []int{}
-	for length, _ := range sizes {
+	for length := range sizes {
 		lengths = append(lengths, length)
 	}
 
