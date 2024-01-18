@@ -10,7 +10,7 @@ import (
 	"strings"
 )
 
-// AllDicts returns a slice of filenames of all of the dictionaries.
+// AllDicts returns a slice of filenames of all the dictionaries
 func AllDicts(path string) []string {
 	files, err := os.ReadDir(path)
 	if err != nil {
@@ -75,7 +75,7 @@ func SortUnique(s []string) []string {
 		return []string{}
 	}
 
-	// Make a copy so we do not corrupt the backing array of s
+	// Make a copy, so we do not corrupt the backing array of s
 	s2 := make([]string, len(s))
 	copy(s2, s)
 
