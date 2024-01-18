@@ -10,8 +10,6 @@ import (
 	"strings"
 )
 
-var ()
-
 // AllDicts returns a slice of filenames of all of the dictionaries.
 func AllDicts(path string) []string {
 	files, err := os.ReadDir(path)
@@ -154,7 +152,7 @@ func Anagrams(words []string) map[string]int {
 	return anagrams
 }
 
-// WordLegths returns a sorted slice of all word lengths.
+// WordLengths returns a sorted slice of all word lengths
 func WordLengths(words []string) []int {
 	sizes := map[int]bool{}
 	for _, word := range words {
