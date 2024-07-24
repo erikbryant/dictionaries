@@ -40,8 +40,10 @@ admiral
 admit
 adopt
 adopted
+adore
 adoring
 adorn
+adult
 advised
 aerated
 aerosol
@@ -70,6 +72,7 @@ alarmed
 album
 alert
 alerted
+algae
 alibi
 alien
 align
@@ -81,6 +84,7 @@ allot
 allow
 alloy
 almanac
+aloft
 alone
 along
 aloof
@@ -125,6 +129,7 @@ antonym
 anvil
 aorta
 apart
+aphid
 aping
 apparel
 appease
@@ -214,6 +219,7 @@ bathe
 bathtub
 baton
 battery
+bayou
 beard
 beast
 beech
@@ -249,10 +255,12 @@ blaze
 blend
 blended
 blender
+bless
 blimp
 blind
 blink
 bliss
+blitz
 bloated
 blossom
 blurb
@@ -274,6 +282,7 @@ braided
 brain
 brake
 brand
+brash
 bravery
 bravo
 brawn
@@ -293,9 +302,11 @@ brush
 budge
 buffalo
 bugle
+bulge
 bunch
 burgeon
 burglar
+burly
 burnt
 burst
 butch
@@ -307,6 +318,7 @@ cable
 cacti
 cadence
 cadet
+caddy
 calypso
 camel
 canon
@@ -384,6 +396,7 @@ cliff
 climb
 climber
 cling
+cloak
 clock
 closest
 cloth
@@ -419,6 +432,7 @@ copse
 cordial
 correct
 couch
+count
 country
 coven
 cover
@@ -567,6 +581,7 @@ donor
 dopey
 dossier
 dotty
+doubt
 doubted
 dowel
 downy
@@ -774,6 +789,7 @@ fatal
 fatally
 fatigue
 fatty
+fauna
 fearful
 feast
 feign
@@ -791,6 +807,7 @@ ficus
 field
 fiend
 fiery
+fifth
 fight
 fighter
 filly
@@ -866,6 +883,7 @@ gamma
 garbled
 garment
 gaudy
+gavel
 gecko
 geeky
 geese
@@ -913,6 +931,7 @@ grate
 graze
 grazing
 greased
+great
 greatly
 greed
 green
@@ -922,6 +941,7 @@ groan
 groin
 groom
 gross
+group
 grove
 growl
 grown
@@ -934,6 +954,7 @@ guest
 guide
 guild
 guile
+guilt
 gurgled
 gusty
 gutting
@@ -1089,6 +1110,7 @@ kneel
 kneepad
 knell
 knelt
+knife
 knoll
 knotted
 known
@@ -1115,6 +1137,7 @@ lasso
 latch
 later
 lateral
+latex
 lathe
 latrine
 latte
@@ -1144,6 +1167,7 @@ lemur
 lenient
 leopard
 lever
+libel
 liege
 lifting
 light
@@ -1178,6 +1202,7 @@ loose
 loser
 lottery
 louse
+lousy
 lover
 lower
 lowly
@@ -1438,12 +1463,14 @@ oxide
 ozone
 package
 paddy
+paint
 painter
 panic
 pansy
 paper
 parka
 parse
+parry
 partial
 parting
 partner
@@ -1501,6 +1528,7 @@ pleat
 pleated
 plied
 plopped
+pluck
 plumb
 plume
 plump
@@ -1558,6 +1586,7 @@ proxy
 prune
 psalm
 puddled
+pudgy
 puffy
 puree
 purge
@@ -1596,6 +1625,7 @@ range
 rapid
 rarer
 raspy
+ratio
 ratty
 rayon
 reach
@@ -1669,6 +1699,7 @@ riser
 riskier
 risking
 risky
+rival
 riven
 river
 rivet
@@ -1691,6 +1722,7 @@ rooster
 rostrum
 rotated
 rotor
+rouge
 rough
 round
 rouse
@@ -1703,6 +1735,7 @@ royal
 royally
 royalty
 ruddy
+ruder
 rugby
 ruining
 ruler
@@ -1727,14 +1760,18 @@ scalpel
 scamp
 scanned
 scant
+scare
 scarf
 scarlet
+scary
 scenery
 scent
 scion
 scoff
 scold
 scoop
+scorn
+scour
 scout
 scowl
 scram
@@ -1793,6 +1830,7 @@ shuck
 shunt
 shyly
 siege
+sieve
 sight
 sighted
 silvery
@@ -1821,11 +1859,13 @@ slimy
 sling
 slither
 slope
+sloth
 slump
 slung
 slurp
 slush
 slyly
+smash
 smell
 smite
 smuggle
@@ -1860,6 +1900,8 @@ spell
 spelt
 spend
 spent
+spice
+spite
 spittle
 splat
 splurge
@@ -1896,6 +1938,7 @@ steam
 steer
 steered
 stellar
+stern
 sticker
 stiff
 stilt
@@ -1987,6 +2030,7 @@ taste
 tasty
 tatty
 taunt
+tawny
 teach
 tearful
 teary
@@ -2026,6 +2070,7 @@ thought
 three
 threw
 throb
+throw
 thrum
 thumb
 thump
@@ -2061,6 +2106,7 @@ tonal
 tonic
 tonight
 tonnage
+tooth
 toothed
 topic
 topless
@@ -2125,6 +2171,7 @@ trunk
 truss
 trust
 trusted
+truth
 tryst
 tsunami
 tubal
@@ -2163,6 +2210,7 @@ unfed
 unfit
 unicorn
 unified
+unify
 uniform
 union
 unitard
@@ -2270,6 +2318,7 @@ woman
 women
 woozy
 world
+worse
 woven
 wrack
 wreak
@@ -2278,6 +2327,7 @@ wrest
 wring
 wrist
 wrung
+wryly
 yacht
 yanks
 yards
@@ -2300,3 +2350,4 @@ yurts
 zealous
 zebra
 zesty
+zonal
