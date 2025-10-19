@@ -1,3 +1,3 @@
 module github.com/erikbryant/dictionaries
 
-go 1.24.1
+go 1.25.3
