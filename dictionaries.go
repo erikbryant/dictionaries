@@ -6,6 +6,7 @@ import (
 	"fmt"
 	"log"
 	"os"
+	"slices"
 	"sort"
 	"strings"
 )
@@ -34,13 +35,7 @@ func AllDicts(path string) []string {
 
 // ContainsWord returns true if the word is in the slice
 func ContainsWord(words []string, target string) bool {
-	for _, word := range words {
-		if word == target {
-			return true
-		}
-	}
-
-	return false
+	return slices.Contains(words, target)
 }
 
 // LoadFile returns the contents of a file split on newlines
@@ -69,7 +64,7 @@ func FilterByLen(words []string, l int) []string {
 	return matches
 }
 
-// SortUnique sorts a list and removes any duplicates
+// SortUnique returns a copy of s, sorted and without duplicates
 func SortUnique(s []string) []string {
 	if len(s) <= 0 {
 		return []string{}
@@ -113,7 +108,7 @@ func LetterFrequency(words []string) ([]int, [][]int) {
 	}
 
 	for _, match := range words {
-		for i := 0; i < positions; i++ {
+		for i := range positions {
 			lbpFreq[i][match[i]]++
 			lFreq[match[i]]++
 		}
@@ -143,9 +138,7 @@ func Anagrams(words []string) map[string]int {
 
 	for _, word := range words {
 		r := []rune(word)
-		sort.Slice(r, func(i, j int) bool {
-			return r[i] < r[j]
-		})
+		slices.Sort(r)
 		anagrams[string(r)]++
 	}
 
